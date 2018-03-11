@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>p5Markov</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="libraries/rita-full.js"></script>
+	<script src="sketch.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Markov Chain</h1>
+	<ul>Possible reasons for no output
+		<li>Not proper sentences: text needs to start with a capital letter with no preceeding spaces.</li>
+		<li>The input text is not long enough</li>
+	</ul>
+	<p>Please note: You can resize the box.</p>
+	<p>Reload the page to clear it.</p>
+	<textarea id="textfield">Please enter your input text here.</textarea>
+	<button id="submit">submit</button>
+
+	<!--<button id="clear">clear</button>-->
+</body>
+</html>
